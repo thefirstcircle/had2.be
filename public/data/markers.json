@@ -1,0 +1,32 @@
+[
+    {
+        "lat": 40.758896,
+        "lng": -73.985130,
+        "title": "Times Square",
+        "content": "<h3>Times Square</h3><p>The bustling center of New York City, known for its bright lights and Broadway shows.</p><img src='https://pentophoto.files.wordpress.com/2016/11/wp-image-1441252927jpg.jpg' alt='Times Square' style='width:100%;'>"
+    },
+    {
+        "lat": 40.689247,
+        "lng": -74.044502,
+        "title": "Statue of Liberty",
+        "content": "<h3>Statue of Liberty</h3><p>A colossal neoclassical sculpture on Liberty Island in New York Harbor.</p>"
+    },
+    {
+        "lat": 40.706192,
+        "lng": -74.009160,
+        "title": "Wall Street",
+        "content": "<h3>Wall Street</h3><p>Famous for being the heart of the financial district and home of the New York Stock Exchange.</p>"
+    },
+    {
+        "lat": 40.782865,
+        "lng": -73.965355,
+        "title": "Central Park",
+        "content": "<h3>Central Park</h3><p>An urban park in Manhattan that offers peace and tranquility in the midst of the hustle and bustle of the city.</p>"
+    },
+    {
+        "lat": 40.748817,
+        "lng": -73.985428,
+        "title": "Empire State Building",
+        "content": "<h3>Empire State Building</h3><p>An iconic skyscraper, and a symbol of American innovation and progress.</p>"
+    }
+]
