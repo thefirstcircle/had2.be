@@ -1,32 +1,51 @@
 [
     {
-        "lat": 40.758896,
-        "lng": -73.985130,
-        "title": "Times Square",
-        "content": "<h3>Times Square</h3><p>The bustling center of New York City, known for its bright lights and Broadway shows.</p><img src='https://pentophoto.files.wordpress.com/2016/11/wp-image-1441252927jpg.jpg' alt='Times Square' style='width:100%;'>"
+        "lat": 42.3829034,
+        "lng": -72.5307683,
+        "title": "Steve O'Neill",
+        "content_locked": "<p>Blah blah </p>",
+        "content_unlocked": "<p>Haha you clicked on me!</p>"
     },
     {
-        "lat": 40.689247,
-        "lng": -74.044502,
-        "title": "Statue of Liberty",
-        "content": "<h3>Statue of Liberty</h3><p>A colossal neoclassical sculpture on Liberty Island in New York Harbor.</p>"
+        "lat": 42.3831149,
+        "lng": -72.5304404,
+        "title": "Steve O'Neill",
+        "content_locked": "<p>Got hit by a car #ow</p>",
+        "content_unlocked": "<p>#TheyHadNoInsurance</p>"
     },
     {
-        "lat": 40.706192,
-        "lng": -74.009160,
-        "title": "Wall Street",
-        "content": "<h3>Wall Street</h3><p>Famous for being the heart of the financial district and home of the New York Stock Exchange.</p>"
+        "lat": 42.3820946,
+        "lng": -72.5301779,
+        "title": "Steve O'Neill",
+        "content_locked": "<p>Berk is the Goat! #teamsoda</p>",
+        "content_unlocked": "<p>[Picture of dinner with big soda]</p>"
     },
     {
-        "lat": 40.782865,
-        "lng": -73.965355,
-        "title": "Central Park",
-        "content": "<h3>Central Park</h3><p>An urban park in Manhattan that offers peace and tranquility in the midst of the hustle and bustle of the city.</p>"
+        "lat": 42.3826439,
+        "lng": -72.5305078,
+        "title": "Steve O'Neill",
+        "content_locked": "<p>Played basketball</p>",
+        "content_unlocked": "<p>The other team was really bad</p>"
     },
     {
-        "lat": 40.748817,
-        "lng": -73.985428,
-        "title": "Empire State Building",
-        "content": "<h3>Empire State Building</h3><p>An iconic skyscraper, and a symbol of American innovation and progress.</p>"
+        "lat": 42.3826753,
+        "lng": -72.530535,
+        "title": "Steve O'Neill",
+        "content_locked": "<p>We got destroyed by the other team. #wesuck</p>",
+        "content_unlocked": "<p>Other team was super polite!</p>"
+    },
+    {
+        "lat": 42.3825158,
+        "lng": -72.5313272,
+        "title": "Steve O'Neill",
+        "content_locked": "<p>Met my wife here</p>",
+        "content_unlocked": "<p>Here is a picture of us in 1982</p>"
+    },
+    {
+        "lat": 42.3827157,
+        "lng": -72.5314825,
+        "title": "Steve O'Neill",
+        "content_locked": "<p>Smoked a blunt</p>",
+        "content_unlocked": "<p>Then got arrested by cops</p>"
     }
 ]
