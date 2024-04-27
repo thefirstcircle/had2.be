@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function initMap(lat = defaultLat, lng = defaultLng) {
         var mapOptions = {
             center: new google.maps.LatLng(lat, lng),
-            zoom: 16,
+            zoom: 14,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     marker.addListener('click', function() {
                         var dist = getDistanceFromLatLonInM(lat, lng, data.lat, data.lng);
                         var detailsDiv = document.getElementById('marker-details');
-                        detailsDiv.innerHTML = `<div class="content-locked"><h3>${data.title}</h3><p>${data.content_locked}</p></div>`;
+                        detailsDiv.innerHTML = `<div class="content-locked"><h3>${data.title}</h3><h4>${data.username}</h4><p>${data.content_locked}</p></div>`;
                         if (dist <= radius) {
                             detailsDiv.innerHTML += `
                                 <div class="content-unlocked">
