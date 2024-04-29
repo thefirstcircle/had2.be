@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var defaultLat = 42.3831149; // Default Latitude
-    var defaultLng = -72.5304404; // Default Longitude
+    // loc for little bookstore
+    var defaultLat = 42.3798285; // Default Latitude
+    var defaultLng = -72.5244533; // Default Longitude
+    // loc for campus pond
+    var defaultLat = 42.389644;
+    var defaultLng = -72.526511; // Default Longitude
     var radius = 50; // Radius in meters (adjustable)
 
     function initMap(lat = defaultLat, lng = defaultLng) {
@@ -39,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         if (dist <= radius) {
                             detailsDiv.innerHTML += `
                                 <div class="content-unlocked">
+                                    
                                     <p>${data.content_unlocked}</p>
                                     <div class="vote-section">
                                     <button class="btn btn-success upvote">Upvote</button>
