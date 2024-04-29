@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMM627: Fixing Social Media</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= GOOGLE_MAPS_API_KEY %>&callback=initMap" async defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">COMM627: Fixing Social Media</a>
+        </div>
+    </nav>
+    <main role="main" class="container mt-4">
+        <!-- Map display -->
+        <div id="map" style="height: 400px;"></div>
+        <!-- Marker details area -->
+        <div id="marker-details" class="mt-4">
+            <h2>Introduction</h2>
+            <p>Use the map and click on some Pins others have left!</p>
+            <div class="content-locked-sample"><p>You can see pins and some of their details in <b>Yellow</b>...</p></div>
+            <div class="content-unlocked-sample"><p>...but <b>Comments</b>, <b>Upvotes</b>, and <b>hidden content</b> are only available when you are within 15 feet of a pin in real life.</p></div>
+        </div>
+        <div class="jumbotron mt-4">
+            <h1 class="display-4">Had2.Be - "You Had to Be There"</h1>
+            <p class="lead">Click to expose details or stories on the pins. Change your location IRL to see pins that are too far.</p>
+            <hr class="my-4">
+            <p>Interested in the story behind this app?</p>
+            <a class="btn btn-primary btn-lg" href="https://github.com/thefirstcircle/had2.be" role="button" target="_blank">Learn more</a>
+        </div>
+    </main>
+    <script src="js/app.js"></script> <!-- Your custom script -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
