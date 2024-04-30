@@ -146,10 +146,23 @@
     {
         "lat": 42.389563,
         "lng": -72.528517,
-        "title": "Sunset Hill",
-        "username": "@NoNozzy",
-        "content_locked": "<h3>NoNozzy</h3><p>26th Floor Lookout</p>",
-        "content_unlocked": ""
+        "title": "Title attribute is unused for now. If you're seeing it, it's a mistake.",
+        "username": "@nonozzy",
+        "content_locked": "Hint: go to floor 26 to see something special",
+        "prompt":"What can you see from here?",
+        "content_unlocked": "If you look closely, you can see Subbaswammy still living in his house",
+        "comments": [
+            {
+                "username": "@coolguy95",
+                "timestamp": "2024-04-01 12:34",
+                "text": "I knew I saw him the other day!"
+            },
+            {
+                "username": "@zooanimal",
+                "timestamp": "2024-04-02 13:45",
+                "text": "Sub-dawg forever"
+            }
+        ]
     },
     {
         "lat": 42.369811,
@@ -218,10 +231,23 @@
     {
         "lat": 42.3884587,
         "lng": -72.5265013,
-        "title": "Sunset Hill",
-        "username": "@NoNozzy",
-        "content_locked": "<h3>NoNozzy</h3><p>Campus Pond Cherry Blossom</p>",
-        "content_unlocked": ""
+        "title": "Title attribute is unused for now. If you're seeing it, it's a mistake.",
+        "username": "@nonozzy",
+        "content_locked": "Stand here and you can smell...",
+        "prompt":"What's your favorite tree on campus?",
+        "content_unlocked": "the most incredible cherry blossom",
+        "comments": [
+            {
+                "username": "@coolguy95",
+                "timestamp": "2024-04-01 12:34",
+                "text": "I hate cherry blossoms, gross...!"
+            },
+            {
+                "username": "@zooanimal",
+                "timestamp": "2024-04-02 13:45",
+                "text": "UMass just has trees? I thought it only had concrete."
+            }
+        ]
     },
     {
         "lat": 42.384839,
