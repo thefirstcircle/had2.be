@@ -250,9 +250,22 @@
     {
         "lat": 42.389644, 
         "lng": -72.526511,
-        "title": "the campus pond snapper",
+        "title": "Title attribute is unused for now. If you're seeing it, it's a mistake.",
         "username": "@zooanimal",
-        "content_locked": "<p>turtle friend</p>",
-        "content_unlocked": "<img src='data/22647220810_f534e8c2df_o.jpg' alt='zoomed up picture of mr.turtle' style='width:500px;height:400px;'> <img src='data/pond_art.jpeg' alt='I added some art!' style='width:500px;height:400px;'><br> Was sitting here on my lunch break and saw my new best friend. He's like 2 feet!!<br><br>Prompt: What should we name him?<br> Respond:<br>[respond to the prompt]<br> @coolguynoah: Masshole Turtle <br><br><br> Comments Section:<br> [Add a comment]<br>@zooanimal: I dare you to lick him<br> @massie: I saw by the pond today and sketched this picture"
+        "content_locked": "Come to the campus pond to see a sea monster!",
+        "prompt":"What should we name him?",
+        "content_unlocked": "<img src='data/22647220810_f534e8c2df_o.jpg' alt='zoomed up picture of mr.turtle' style='width:500px;height:400px;'> <br> Was sitting here on my lunch break and saw my new best friend. He's like 2 feet!!",
+        "comments": [
+            {
+                "username": "Commenter1",
+                "timestamp": "2024-04-01 12:34",
+                "text": "Great place! Look, I made this: <br> <img src='data/pond_art.jpeg' alt='I added some art!' style='width:500px;height:400px;'>"
+            },
+            {
+                "username": "Commenter2",
+                "timestamp": "2024-04-02 13:45",
+                "text": "Loved it here!"
+            }
+        ]
     }
 ]

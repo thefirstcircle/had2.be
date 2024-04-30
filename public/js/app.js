@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     // loc for little bookstore
-    var defaultLat = 42.3798285; // Default Latitude
-    var defaultLng = -72.5244533; // Default Longitude
+   // var defaultLat = 42.3798285; // Default Latitude
+   // var defaultLng = -72.5244533; // Default Longitude
     // loc for campus pond
     var defaultLat = 42.389644;
     var defaultLng = -72.526511; // Default Longitude
     var radius = 50; // Radius in meters (adjustable)
+    // loc for pierpont
+   // var defaultLat = 42.3814007; // Default Latitude
+   // var defaultLng = -72.5333825; // Default Longitude
+
 
     function initMap(lat = defaultLat, lng = defaultLng) {
         var mapOptions = {
             center: new google.maps.LatLng(lat, lng),
-            zoom: 14,
+            zoom: 16,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -39,21 +43,32 @@ document.addEventListener('DOMContentLoaded', function() {
                     marker.addListener('click', function() {
                         var dist = getDistanceFromLatLonInM(lat, lng, data.lat, data.lng);
                         var detailsDiv = document.getElementById('marker-details');
-                        detailsDiv.innerHTML = `<div class="content-locked"><h3>${data.title}</h3><h4>${data.username}</h4><p>${data.content_locked}</p></div>`;
+                        detailsDiv.innerHTML = `<div class="content-locked"><h4>${data.username}</h4><h3>${data.content_locked}</h3></div>`;
                         if (dist <= radius) {
+                            let commentsHTML = data.comments.map(comment => {
+                                return `<div class="comment">
+                                            <div class="vote-section">
+                                                <button class="btn vote upvote" aria-label="Upvote">&#9650;</button>
+                                                <button class="btn vote downvote" aria-label="Downvote">&#9660;</button>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p><strong>${comment.username}</strong> <span>(${comment.timestamp})</span>:</p>
+                                                <p>${comment.text}</p>
+                                            </div>
+                                        </div>`;
+                            }).join('');
+                    
                             detailsDiv.innerHTML += `
                                 <div class="content-unlocked">
-                                    
                                     <p>${data.content_unlocked}</p>
-                                    <div class="vote-section">
-                                    <button class="btn btn-success upvote">Upvote</button>
-                                    <span class="votes-count">0</span>
-                                    <button class="btn btn-danger downvote">Downvote</button>
-                                </div>
-                                    <div class="comments-section">
-                                        <h4>Comments</h4>
+                                    <div class="comments-section-prompt">
+                                        <h4>${data.prompt}</h4>
                                         <textarea placeholder="Add a comment..." rows="3" class="form-control"></textarea>
                                         <button class="btn btn-primary mt-2">Submit Comment</button>
+                                    </div>
+                                    <div class="comments-section">
+                                        <h4>Comments</h4>
+                                        ${commentsHTML}
                                     </div>
                                 </div>`;
                             let unlockedContent = detailsDiv.querySelector('.content-unlocked');
@@ -61,16 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                 unlockedContent.style.display = 'block';
                                 unlockedContent.style.opacity = 1;
                             }, 100); // Timeout to trigger fade-in effect
-
-                            let upvoteBtn = detailsDiv.querySelector('.upvote');
-                            let downvoteBtn = detailsDiv.querySelector('.downvote');
-                            let votesCount = detailsDiv.querySelector('.votes-count');
-                            upvoteBtn.addEventListener('click', () => {
-                                votesCount.textContent = parseInt(votesCount.textContent) + 1;
-                            });
-                            downvoteBtn.addEventListener('click', () => {
-                                votesCount.textContent = parseInt(votesCount.textContent) - 1;
-                            });
                         }
                     });
                 });
