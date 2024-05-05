@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
    // var defaultLat = 42.3814007; // Default Latitude
    // var defaultLng = -72.5333825; // Default Longitude
 
-
     function initMap(lat = defaultLat, lng = defaultLng) {
         var mapOptions = {
             center: new google.maps.LatLng(lat, lng),
@@ -115,3 +114,4 @@ function getDistanceFromLatLonInM(lat1, lon1, lat2, lon2) {
 function deg2rad(deg) {
     return deg * (Math.PI / 180);
 }
+

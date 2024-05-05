@@ -1,9 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: #f7f7f7;
-    color: #333;
+html, body {
+    height: 100%; /* Full height */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+.navbar {
+    margin-bottom: 0; /* Remove margin below navbar */
 }
 
 header {
@@ -23,10 +26,8 @@ main {
 }
 
 #map {
-    height: 400px;
-    width: 100%;
-    margin-top: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
 }
 
 a {
@@ -124,4 +125,15 @@ a:hover {
 
 .comment p {
     margin: 5px 0; /* Margin for paragraphs inside comments */
+}
+
+#marker-details {
+    height: 100vh; /* Viewport height for marker details to match the map height */
+    overflow-y: auto; /* Allow scrolling */
+    padding: 20px; /* Optional padding for aesthetics */
+}
+
+#details-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Optional padding for aesthetics */
 }
